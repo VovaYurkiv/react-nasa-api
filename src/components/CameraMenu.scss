@@ -1,0 +1,73 @@
+.camera-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 5%;
+  position: relative;
+  border: 1px solid rgb(133, 54, 1);
+  border-radius: 3px;
+  width: 80%;
+  margin: 1% auto auto auto;
+  padding-bottom: 30px;
+
+  h2 {
+    font-size: 35px;
+    background-color: rgb(133, 54, 1);
+    padding: 10px 0px 10px 0px;
+  }
+}
+
+.camera {
+  padding-top: 30px;
+  font-size: 20px;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .camera-nav {
+    h2 {
+      font-size: 25px;
+    }
+
+    .camera {
+      font-size: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .camera-nav {
+    margin-top: 5%;
+    width: 60%;
+    overflow-y: scroll;
+    height: 250px;
+    h2 {
+      font-size: 22px;
+    }
+
+    .camera {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .camera-nav {
+    margin-top: 11%;
+    width: 80%;
+    h2 {
+      font-size: 18px;
+    }
+
+    .camera {
+      font-size: 14px;
+    }
+  }
+}

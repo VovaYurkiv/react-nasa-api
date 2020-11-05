@@ -1,0 +1,48 @@
+.whole-page {
+  color: rgb(228, 193, 140);
+  display: flex;
+  justify-content: space-between;
+}
+
+.options {
+  width: 600px;
+  height: 750px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 225px 200px rgba(0, 0, 0, 0.75);
+  margin: auto;
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+  .whole-page {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .options {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .whole-page {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .options {
+    margin-top: 10px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .whole-page {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .options {
+    width: 300px;
+  }
+}

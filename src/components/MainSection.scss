@@ -1,0 +1,22 @@
+.main-section {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+}
+
+.main-photos {
+  width: 70%;
+  height: 70%;
+}
+
+@media screen and (max-width: 650px) {
+  .main-section {
+    grid-gap: 5px;
+  }
+
+  .main-photos {
+    width: 90%;
+    height: 90%;
+  }
+}
