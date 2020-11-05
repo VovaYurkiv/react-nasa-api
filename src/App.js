@@ -69,23 +69,3 @@ useEffect(() => {
 
 export default App;
 
-// rover = {rover}
-// camera={camera}
-// handleInput={handleInput}
-// sol={sol}
-
-  // useEffect(() => {
-  //   selectRover = () => {
-  //     setRover('curiosity')
-  //   }
-  //   selectRover()
-  // }, [])
-  
-
-  // useEffect(() => {
-  //   selectSol = () => {
-  //     setSol(null)
-  //   }
-  //   selectSol(1000)
-  // }, [])
-
