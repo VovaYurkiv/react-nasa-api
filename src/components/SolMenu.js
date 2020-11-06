@@ -1,5 +1,6 @@
 import React from 'react'
 import './SolMenu.scss'
+import { Link } from 'react-scroll';
 
 const SolMenu = ({ handleInput, setSol, sol }) => {
 
@@ -18,7 +19,17 @@ const SolMenu = ({ handleInput, setSol, sol }) => {
                         type='number'
                         placeholder='Enter a sol(Mars day)'>   
                     </input>
-                    <button onClick={() => setSol(sol)} className='explore-button'>Explore now</button>
+                    <button onClick={() => setSol(sol)} className='explore-button'>
+                        <Link
+                            to={'bottom-container'}
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                            >
+                            Explore now
+                        </Link>
+                    </button>
                 </div>
             </ul>
         </div>
@@ -26,3 +37,4 @@ const SolMenu = ({ handleInput, setSol, sol }) => {
 }
 
 export default SolMenu
+

@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import './MainSection.scss'
-import loading from './assets/loading.gif'
 
 
 const MainSection = ({ photos, flag, picsPerPage }) => {
@@ -8,9 +7,7 @@ const MainSection = ({ photos, flag, picsPerPage }) => {
 
 
     return (
-        <div>
-
-        {flag ? <img classname='loading' src={loading} alt='' />: <div className='main-section'>
+        <div className='main-section'>
             {photos.slice(0, picsPerPage).map((el) => {
                 return (
                     <div>
@@ -18,17 +15,11 @@ const MainSection = ({ photos, flag, picsPerPage }) => {
                     </div>
                 )
             })}
-            </div>}
-        </div>
+            </div>
     )
 }
 
 export default MainSection
-
-
-
-
-
 
 
 

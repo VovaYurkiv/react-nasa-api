@@ -16,9 +16,6 @@ const App = ( { handleInput }) => {
   const [rover, setRover] = useState('')
   const [camera, setCamera] = useState('')
   const[sol, setSol] = useState(null)
-  
-  console.log(camera)
-  console.log(rover)
 
   const[data, setData] = useState({
     flag: true,
