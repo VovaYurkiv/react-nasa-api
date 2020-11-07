@@ -8,7 +8,6 @@ const SolMenu = ({ handleInput, setSol, sol }) => {
 
 
     return (
-        <div>
            <ul className='sol-nav'>
             <h2>Select a sol</h2>
                 <div className='submit'>
@@ -32,7 +31,6 @@ const SolMenu = ({ handleInput, setSol, sol }) => {
                     </button>
                 </div>
             </ul>
-        </div>
     )
 }
 
