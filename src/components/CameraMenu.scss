@@ -12,6 +12,7 @@
   width: 80%;
   margin: 1% auto auto auto;
   padding-bottom: 30px;
+  overflow-y: scroll;
 
   h2 {
     font-size: 35px;
@@ -46,7 +47,6 @@
   .camera-nav {
     margin-top: 5%;
     width: 60%;
-    overflow-y: scroll;
     height: 250px;
     h2 {
       font-size: 22px;
@@ -69,5 +69,19 @@
     .camera {
       font-size: 14px;
     }
+  }
+}
+
+@media screen and (max-height: 770px) {
+  .camera-nav {
+    height: 500px;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .camera-nav {
+    height: 450px;
+    margin-top: 0%;
   }
 }
