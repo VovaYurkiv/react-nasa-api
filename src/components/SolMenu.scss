@@ -10,14 +10,15 @@
   border: 1px solid rgb(133, 54, 1);
   border-radius: 3px;
   width: 80%;
-  margin: 37% auto auto auto;
-  padding-bottom: 20px;
+  margin: 25% auto auto auto;
+  padding-bottom: 50px;
 
   h2 {
     font-size: 35px;
     background-color: rgb(133, 54, 1);
     padding: 10px 0px 10px 0px;
-    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(31, 31, 31);
+    margin-bottom: 50px;
   }
 }
 
@@ -25,7 +26,7 @@
   width: 90%;
   margin: auto;
   padding: 10px 3px;
-  font-size: 20px;
+  font-size: 22px;
   background-color: rgb(228, 193, 140);
   border: none;
   outline: none;
@@ -68,9 +69,33 @@ input[type='number']::-webkit-outer-spin-button {
   }
 }
 
+@media screen and (max-width: 1130px) {
+  .sol-nav {
+    h2 {
+      font-size: 25px;
+    }
+
+    .sol {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .sol-nav {
+    h2 {
+      font-size: 25px;
+    }
+
+    .sol {
+      font-size: 15px;
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .sol-nav {
-    margin-top: 18%;
+    margin-top: 10%;
     width: 60%;
     h2 {
       font-size: 22px;
@@ -84,7 +109,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 @media screen and (max-width: 650px) {
   .sol-nav {
-    margin-top: 35%;
+    margin-top: 16%;
     width: 80%;
     h2 {
       font-size: 18px;
@@ -98,6 +123,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 @media screen and (max-width: 450px) {
   .sol-nav {
+    margin-top: 21%;
     .sol {
       font-size: 12px;
     }
@@ -105,17 +131,5 @@ input[type='number']::-webkit-outer-spin-button {
     .explore-button {
       font-size: 12px;
     }
-  }
-}
-
-@media screen and (max-height: 770px) {
-  .sol-nav {
-    margin-top: 28%;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  .sol-nav {
-    margin-top: 24%;
   }
 }

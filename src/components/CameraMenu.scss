@@ -10,29 +10,37 @@
   border: 1px solid rgb(133, 54, 1);
   border-radius: 3px;
   width: 80%;
-  margin: 1% auto auto auto;
-  padding-bottom: 30px;
+  margin: 0% auto auto auto;
   overflow-y: scroll;
 
   h2 {
     font-size: 35px;
     background-color: rgb(133, 54, 1);
     padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid rgb(31, 31, 31);
   }
 }
 
 .camera {
-  padding-top: 30px;
-  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 22px;
 
   &:hover {
-    text-decoration: underline;
+    background-color: rgb(133, 54, 1);
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .camera-nav {
+    height: 600px;
   }
 }
 
 @media screen and (max-width: 1450px) {
   .camera-nav {
+    height: 500px;
     h2 {
       font-size: 25px;
     }
@@ -47,7 +55,7 @@
   .camera-nav {
     margin-top: 5%;
     width: 60%;
-    height: 250px;
+    height: 245px;
     h2 {
       font-size: 22px;
     }
@@ -60,7 +68,6 @@
 
 @media screen and (max-width: 650px) {
   .camera-nav {
-    margin-top: 11%;
     width: 80%;
     h2 {
       font-size: 18px;
@@ -69,19 +76,5 @@
     .camera {
       font-size: 14px;
     }
-  }
-}
-
-@media screen and (max-height: 770px) {
-  .camera-nav {
-    height: 500px;
-    margin-top: 2%;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  .camera-nav {
-    height: 450px;
-    margin-top: 0%;
   }
 }
