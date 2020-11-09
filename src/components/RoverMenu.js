@@ -3,7 +3,6 @@ import './RoverMenu.scss'
 import { rovers } from '../data/rovers'
 
 const RoverMenu = ({ setRover }) => {
-  
 
     return (
             <ul className='rover-nav'>

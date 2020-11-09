@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Options.scss'
 import RoverMenu from './RoverMenu'
 import CameraMenu from './CameraMenu'
