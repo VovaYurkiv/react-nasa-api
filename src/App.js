@@ -41,7 +41,6 @@ useEffect(() => {
 }, [sol])
 
 
-
   return (
       <> 
         <div className='top-container'>
@@ -54,11 +53,11 @@ useEffect(() => {
             sol={sol} />
         </div>
           <div className='bottom-container'>
-            <MainSection 
-            photos={photos}
-            flag={flag}
-            picsPerPage={picsPerPage} />
-            {!flag && <button className='more-button' onClick={showMoreItems}>Load more. . .</button> }
+              <MainSection 
+                photos={photos}
+                flag={flag}
+                picsPerPage={picsPerPage} /> 
+            { !flag && <button className='more-button' onClick={showMoreItems}>Load more. . .</button> }
         </div>
       </>
   )

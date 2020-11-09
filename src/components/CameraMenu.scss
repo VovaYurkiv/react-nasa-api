@@ -26,7 +26,8 @@
   padding-bottom: 20px;
   font-size: 22px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: rgb(133, 54, 1);
     cursor: pointer;
   }

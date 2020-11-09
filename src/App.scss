@@ -40,6 +40,10 @@
   }
 }
 
+[tabindex] {
+  outline: none !important;
+}
+
 @media screen and (max-width: 1000px) {
   .top-container {
     height: 100%;
