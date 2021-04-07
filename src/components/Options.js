@@ -4,7 +4,7 @@ import RoverMenu from './RoverMenu'
 import CameraMenu from './CameraMenu'
 import SolMenu from './SolMenu'
 
-const Options = ({ handleInput, setRover, setCamera, setSol, sol }) => {
+const Options = ({ handleInput, setRover, setCamera, setSol, sol, getData }) => {
 
 
 
@@ -20,7 +20,9 @@ const Options = ({ handleInput, setRover, setCamera, setSol, sol }) => {
                 <SolMenu 
                     handleInput={handleInput}
                     setSol={setSol}
-                    sol={sol} />
+                    sol={sol}
+                    getData={getData} 
+                />
             </div>
         </div>
     )

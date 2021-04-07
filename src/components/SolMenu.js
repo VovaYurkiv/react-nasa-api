@@ -2,10 +2,7 @@ import React from 'react'
 import './SolMenu.scss'
 import { Link } from 'react-scroll';
 
-const SolMenu = ({ handleInput, setSol, sol }) => {
-
-
-
+const SolMenu = ({ handleInput, setSol, sol, getData }) => {
 
     return (
            <ul className='sol-nav'>
@@ -14,7 +11,6 @@ const SolMenu = ({ handleInput, setSol, sol }) => {
                     <input
                         onChange={handleInput}
                         className='sol'
-                        // value={sol}
                         type='number'
                         placeholder='Enter a sol(Mars day)'>   
                     </input>
@@ -25,6 +21,7 @@ const SolMenu = ({ handleInput, setSol, sol }) => {
                             smooth={true}
                             offset={0}
                             duration={500}
+                            onClick={getData}
                             >
                             Explore now
                         </Link>
