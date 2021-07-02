@@ -1,4 +1,4 @@
-# Deploy is here:
+# To experience this project hit the link below:
 https://nasa-rovers.web.app/
 
 # Getting Started with Create React App
